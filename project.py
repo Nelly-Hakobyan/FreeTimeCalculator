@@ -5,7 +5,7 @@ def load_data():
     with open('data.json') as UserData:
         data = json.load(UserData)
         return data
-def UserData():
+def GetUserData():
     User_data = {
             "Name": "",
             "LastName": "",
@@ -46,7 +46,7 @@ def Free_time_calculator():
         else:
             print("Please enter a valid answer (y,n) ")
 
-    free_time = 24 - sum 
+    free_time =str( 24 - sum) 
 
     return free_time
 
@@ -58,11 +58,11 @@ def save_to_json(Users):
 def main():
     Users = []
     Users = load_data()
-    J = UserData()
+    J = GetUserData()
     Users.append(J)
     save_to_json(Users)
 
-    F = str(Free_time_calculator())
+    F = Free_Time_Calculator
     print("You have " + F + " hours of free time")
 
 main()
